@@ -1,0 +1,154 @@
+Name: Priyanshu Jain
+
+
+Email:  priyanshudeveloper@gmail.com
+
+IRC Nick:  priyanshu on Freenode
+
+
+Website: priyanshujain.github.io
+
+
+Github:  https://github.com/priyanshujain
+
+Location: Bilaspur, India(GMT+5:30 hours)
+
+
+Background: 
+I am a undergraduate Computer Science student studying in Guru Ghasidas
+University, located in Bilaspur, India. I have been using C, C++, Python & Bash
+for around 2-3 years now and hence, quite proficient in them. Apart from
+academics, I have great interest in Free & Open Source Software. I am a member
+of FOSSASIA. Also I have been involved in competitive programming[1] and
+participated in ACM ICPC India online round 2016.
+
+
+Mailing list subscribed to:
+	Kexi mailing list:
+		https://mail.kde.org/mailman/listinfo/kexi-devel
+		https://mail.kde.org/mailman/listinfo/calligra-devel
+	Kde mailing list:
+		https://mail.kde.org/mailman/listinfo/kde-devel
+Relevant IRC channel:
+	#kexi on freenode
+
+
+Hardware: I use a Lenovo G460 laptop. Its an intel core i3 powered laptop with
+8 GB RAM. It is equipped with a webcam and 120 gb ssd. I prefer to do my work
+from home using laptop with external large screen monitor but I also have access
+ to computer lab of my university. I also own a RaspberryPi2 Model B+ and a
+ Tegra Note 7(android tablet).
+
+Operating System: I use Arch Linux as my primary operating system in my laptop.
+I also have Raspbian running on the Pi.
+Internet Connection: I have a unfiltered and proxyless 5 Mb/sec Wireless
+broadband connection at home. There are several unrestricted hotspots in my
+locality and University. If required I can use a 3G mobile data connection
+using usb modem.
+
+Development tools: I use Atom as my code editor along with GCC5 v5.3.0.I use
+GDB for debugging.Lint in Atom,valgrind for checking memory errors.
+
+Project title : Improve stability and feature set of Kexi MS Access import
+
+Mentor:Jarosław Staniek <staniek@kde.org>
+
+What makes you the best person to work on this project?
+
+I like contributing to open source and have prior experience.
+I have the required skills and I am a fast learner.
+I have good communication skills and can clearly and concisely communicate
+development related issues.
+
+The idea of improving database access software, will help me become familiar
+with the functioning of real world applications. I want to work on making
+software easily accessible and understandable to the end user. Working on the
+Kexi project will give me an excellent opportunity to do so and at the same
+time enhance my skill and knowledge which in turn will help me get things done
+in future.
+
+
+Project Details:
+Kexi is a visual database applications creator, part of the Calligra Suite.
+Kexi Support for importing Microsoft Access databases (2003 or older) is built
+into Kexi. It uses the import wizard by selecting desired .mdb file. MDB
+databases are files produced by the Microsoft 'Jet' database engine. They are
+used as the format for Microsoft Access databases. MDB Tools is an open source
+suite of libraries and utilities to read (and soon write) MDB database files.
+Current mdbtools sources included with Kexi (kexi.git) for MS Access mdb format
+ support can be outdated. Trying to get people to move to Kexi from Access at
+ some point, means the should be able to move their existing data/design also.
+
+
+Benefits to kexi:
+Improved mdb support will attract more people for moving from access to kexi.
+
+
+Expected results:
+
+Use the newest mdbtools code from https://github.com/brianb/mdbtools and merge
+patches made by the Kexi project (once filled at
+https://bugs.kde.org/show_bug.cgi?id=277583, the task may be need a repeat).
+
+Propose and implement improvements to the MDB support.
+If this means extensive testing with mdb data files and reverse-engineering,
+plan this as well.
+
+Provide the patches upstream for the mdbtools project, which would improve
+packaging.
+
+Update instructions for the packagers.
+
+
+Project schedule:
+
+
+November
+Week 1,2: Will get in touch with the mentor and will aim at building source code.
+Understanding current existing source code.
+Familiarization with the mdbtools.
+Week 3,4:
+Would be busy with university examinations. Still would try to work as much as
+possible.
+
+
+December
+Week 1,2,3:
+Testing with mdb files on existing mdbtools.
+Use the newest mdbtools code and merge patches made by the Kexi project.
+Week 4:
+This week would be off from college.
+Will continue working on mdbtools.
+Test with mdb files on newly implemented mdbtools.
+
+
+January
+Keep working on testing and Solve bugs.
+Implement improvements to the MDB support.
+Extensive testing with mdb data files and reverse-engineering.
+February
+Get reviewed by the mentor and other people on reviewboard.
+Improve packaging.
+Provide the patches upstream.
+Complete the project.
+
+
+Other winter Plans:
+I have no other plans for this season and will easily be able to devote
+20-25 hrs/week to the project.
+
+My previous experience with Kde:
+I applied for gsoc 2016[2] in kde but unfortunately did not got selected.
+I am familiar with kde build system and kde applications development.
+I have just begun my journey. But, I plan on going a long way.
+
+
+After SoK:
+I will continue to contributing to kexi and kde.
+
+
+Links:
+
+
+[1]  https://www.hackerrank.com/priyanshu
+[2]  https://goo.gl/UXVpXO
