@@ -1,2 +1,2 @@
-url: https://www.priyanshujain.me   # with the https protocol
-enforce_ssl: www.priyanshujain.me   # without any protocol
+url: https://priyanshujain.me   # with the https protocol
+enforce_ssl: priyanshujain.me   # without any protocol
