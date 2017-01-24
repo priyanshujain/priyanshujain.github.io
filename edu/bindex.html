@@ -1,32 +1,142 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <title>edu.md - Grip</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var host = "priyanshujain.me";
+		if ((host == window.location.host) && (window.location.protocol != "https:"))
+				window.location.protocol = "https";
+				</script>
+<link rel="canonical" href=" https://www.priyanshujain.me/resume/">
+	<title>Priyanshu Jain</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<meta name="keywords" content="Priyanshu Jain">
+	<meta name="description" content="Priyanshu Jain Home Page">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/paper/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.css">
   <link rel="icon" href="/__/grip/static/favicon.ico" />
   <link rel="stylesheet" href="/__/grip/asset/github-e5c626d539be6e8369b342e6eee117a5853dd4672da7cb4ad526478ef69cfc33.css" />
   <link rel="stylesheet" href="/__/grip/asset/frameworks-c07e6f4b02b556d1d85052fb3853caf84c80e6b23dcdb1ae1b00f051da1115a2.css" />
   <link rel="stylesheet" href="/__/grip/asset/site-293f92180d0a619a750fa2b5eae9e36740f5723a59c0ec308972c70d24e834fc.css" />
   <link rel="stylesheet" href="/__/grip/static/octicons/octicons.css" />
-  <style>
-    /* Page tweaks */
-    .preview-page {
-      margin-top: 64px;
+	<link rel="icon" href="pj.png" type="image/x-icon"/>
+  <script>
+    function showCanonicalImages() {
+      var images = document.getElementsByTagName('img');
+      if (!images) {
+        return;
+      }
+      for (var index = 0; index < images.length; index++) {
+        var image = images[index];
+        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
+          image.src = image.getAttribute('data-canonical-src');
+        }
+      }
     }
-    /* User-content tweaks */
-    .timeline-comment-wrapper > .timeline-comment:after,
-    .timeline-comment-wrapper > .timeline-comment:before {
-      content: none;
+
+    function scrollToHash() {
+      if (location.hash && !document.querySelector(':target')) {
+        var element = document.getElementById('user-content-' + location.hash.slice(1));
+        if (element) {
+           element.scrollIntoView();
+        }
+      }
     }
-    /* User-content overrides */
-    .discussion-timeline.wide {
-      width: 920px;
+
+    function autorefreshContent(eventSourceUrl) {
+      var initialTitle = document.title;
+      var contentElement = document.getElementById('grip-content');
+      var source = new EventSource(eventSourceUrl);
+      var isRendering = false;
+
+      source.onmessage = function(ev) {
+        var msg = JSON.parse(ev.data);
+        if (msg.updating) {
+          isRendering = true;
+          document.title = '(Rendering) ' + document.title;
+        } else {
+          isRendering = false;
+          document.title = initialTitle;
+          contentElement.innerHTML = msg.content;
+          showCanonicalImages();
+        }
+      }
+
+      source.onerror = function(e) {
+        if (e.readyState === EventSource.CLOSED && isRendering) {
+          isRendering = false;
+          document.title = initialTitle;
+        }
+      }
     }
-  </style>
+
+    window.onhashchange = function() {
+      scrollToHash();
+    }
+
+    window.onload = function() {
+      scrollToHash();
+    }
+
+    showCanonicalImages();
+
+    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
+    if (autorefreshUrl) {
+      autorefreshContent(autorefreshUrl);
+    }
+  </script>
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-64404592-2', 'auto');
+	  ga('send', 'pageview');
+</script>
 </head>
 <body>
-  <div class="page">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+	      	<span class="icon-bar"></span>
+	        <!-- <span class="sr-only">Toggle navigation</span> -->
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand">Priyanshu Jain</a>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+	      <ul class="nav navbar-nav">
+	      	<li style="font-size:20px"><a href="/">Home</a></li>
+					<li style="font-size:20px"><a href="/about">About</a></li>
+	        <li style="font-size:20px"><a href="/academics">Academics</a></li>
+	        <li style="font-size:20px"><a href="/projects">Projects</a></li>
+					<li style="font-size:20px"><a href="/research">Research</a></li>
+          <li style="font-size:20px"><a href="/activities">Activities</a></li>
+	        <li style="font-size:20px"><a href="/resume">Resume </a></li>
+          <li style="font-size:20px"><a href="/contact">Contact</a></li>
+					<li style="font-size:20px"><a href="https://news.ycombinator.com/" target="_blank">News</a></li>
+					<li class="active" style="font-size:20px"><a href="/edu">EDU <span class="sr-only">(current)</span></a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container" style="padding-top:100px">
+
+	</div>
+	<div class="container">
+    <div class="page">
     <div id="preview-page" class="preview-page" data-autorefresh-url="/__/grip/refresh/">
 
 
@@ -752,70 +862,8 @@
 
   </div>
   <div>&nbsp;</div>
-  </div><script>
-    function showCanonicalImages() {
-      var images = document.getElementsByTagName('img');
-      if (!images) {
-        return;
-      }
-      for (var index = 0; index < images.length; index++) {
-        var image = images[index];
-        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
-          image.src = image.getAttribute('data-canonical-src');
-        }
-      }
-    }
+  </div>
 
-    function scrollToHash() {
-      if (location.hash && !document.querySelector(':target')) {
-        var element = document.getElementById('user-content-' + location.hash.slice(1));
-        if (element) {
-           element.scrollIntoView();
-        }
-      }
-    }
-
-    function autorefreshContent(eventSourceUrl) {
-      var initialTitle = document.title;
-      var contentElement = document.getElementById('grip-content');
-      var source = new EventSource(eventSourceUrl);
-      var isRendering = false;
-
-      source.onmessage = function(ev) {
-        var msg = JSON.parse(ev.data);
-        if (msg.updating) {
-          isRendering = true;
-          document.title = '(Rendering) ' + document.title;
-        } else {
-          isRendering = false;
-          document.title = initialTitle;
-          contentElement.innerHTML = msg.content;
-          showCanonicalImages();
-        }
-      }
-
-      source.onerror = function(e) {
-        if (e.readyState === EventSource.CLOSED && isRendering) {
-          isRendering = false;
-          document.title = initialTitle;
-        }
-      }
-    }
-
-    window.onhashchange = function() {
-      scrollToHash();
-    }
-
-    window.onload = function() {
-      scrollToHash();
-    }
-
-    showCanonicalImages();
-
-    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
-    if (autorefreshUrl) {
-      autorefreshContent(autorefreshUrl);
-    }
-  </script>
+	</div>
 </body>
 </html>
