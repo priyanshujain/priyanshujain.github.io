@@ -1,0 +1,50 @@
+body {
+    font-family: Lato;
+    padding: 10px 30px;
+}
+.name {
+    margin: 0;
+}
+
+.link {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.wannabe {
+    font-weight: 300;
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+li {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.about a {
+    font-weight: 600;
+}
+.annotation {
+    font-size: 14px;
+    margin-left: 200px;
+}
+
+.blog p {
+    font-size: 18px;
+}
+
+.blog li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
