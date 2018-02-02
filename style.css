@@ -31,6 +31,9 @@ li {
 a {
     text-decoration: none;
 }
+a:hover {
+    text-decoration: solid !important;
+}
 
 .about p {
     font-size: 1.2rem;
@@ -41,7 +44,7 @@ a {
 }
 .annotation {
     font-size: 14px;
-    margin-left: 200px;
+    font-style: italic;
 }
 
 .blog p {
@@ -56,4 +59,13 @@ a {
     width: 280px;
     max-width: 100%;
     border-radius: 10px;
+}
+
+.readings p {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.readings li {
+    font-size: 1.4rem;
 }
